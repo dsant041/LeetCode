@@ -79,8 +79,7 @@ class Solution(object):
                 
                 stack.append(temp.pop())
                 
-            if len(stack) == 1:
-                return stack[0]
+          
             
         
             
