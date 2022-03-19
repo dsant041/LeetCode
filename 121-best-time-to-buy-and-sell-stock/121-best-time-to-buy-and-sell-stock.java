@@ -12,7 +12,7 @@ class Solution {
                 min = i;
             }
             
-            if (prices[i] > prices[min] && prices[i] - prices[min] > diff)
+            else if (prices[i] > prices[min] && prices[i] - prices[min] > diff)
                 diff = prices[i] - prices[min];
             
         }
