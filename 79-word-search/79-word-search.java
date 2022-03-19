@@ -3,16 +3,7 @@ class Solution {
         
         if (board == null || word == null || board.length == 0 || word.length() == 0)
             return false;
-        
-        /*
-        if (board.length == 1 && board[0].length == 1){
-            if (board[0][0] == word.charAt(0))
-                return true;
-            else
-                return false;
-        }
-        */
-        
+
         for (int i=0; i<board.length;i++){
             for (int j=0;j<board[0].length;j++){
                 
