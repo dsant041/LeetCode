@@ -22,7 +22,7 @@ class Solution {
         if (root == null)
             return 0;
         
-        int diameter = diameterOfBinaryTree(root, 0);
+        diameterOfBinaryTree(root, 0);
         
         return maxDiameter;
 
