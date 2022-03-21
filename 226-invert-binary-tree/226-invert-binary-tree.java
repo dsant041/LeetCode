@@ -20,25 +20,12 @@ class Solution {
             return root;
         
         TreeNode temp = root.left;
-        root.left = root.right;
-        root.right = temp;
-        
-        invertChildren(root.left);
-        invertChildren(root.right);
+        root.left = invertTree(root.right);       
+        root.right = invertTree(temp);
+
         
         return root;
         
     }
     
-    public void invertChildren(TreeNode root){
-        
-        if (root != null){
-            TreeNode temp = root.left;
-            root.left = root.right;
-            root.right = temp;
-            
-            invertChildren(root.left);
-            invertChildren(root.right);
-        }
-    }
 }
