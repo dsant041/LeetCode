@@ -12,7 +12,7 @@ class Solution {
         
         
         
-        System.out.println(s);
+
         
         while (start <= end){
             
