@@ -13,7 +13,7 @@ class Solution {
             return allCombinations;
         }
              
-
+/*
         if (k==n){
             List<Integer> single = new LinkedList<>();
             for (int i=1; i<=n; i++){
@@ -22,6 +22,7 @@ class Solution {
             allCombinations.add(single);
             return allCombinations;
         }
+        */
         
         allCombinations = combine(n-1,k-1);
         
