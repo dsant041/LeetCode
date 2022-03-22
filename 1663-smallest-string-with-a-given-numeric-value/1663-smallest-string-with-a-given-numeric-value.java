@@ -1,10 +1,10 @@
 class Solution {
     public String getSmallestString(int n, int k) {
         
-        String smallestString = "";
+     
         
-        if (n==1)
-            return smallestString + (char) (k + 'a' - 1);
+      //  if (n==1)
+        //    return smallestString + (char) (k + 'a' - 1);
         
         int max = 26;
         
