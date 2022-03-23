@@ -2,8 +2,7 @@ class Solution {
     public List<List<Integer>> permute(int[] nums) {
         
         List<List<Integer>> permutations = new LinkedList<>();
-        
-        
+
         
         if (nums.length == 1){
             List<Integer> single  = new LinkedList<>();
@@ -22,11 +21,8 @@ class Solution {
                     j++;
                 }
                 numsIndex++;
-                //j++;
             }
-            System.out.println(nums[i]);
-            System.out.println(Arrays.toString(subNums));
-            System.out.println();
+
             List<List<Integer>> subPermutations = permute(subNums);
             for (List<Integer> subPer : subPermutations){
                 subPer.add(nums[i]);
