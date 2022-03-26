@@ -7,8 +7,6 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-
-
         
         if nums is None or len(nums) == 0:
             return -1;
