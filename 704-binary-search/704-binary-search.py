@@ -30,14 +30,6 @@ class Solution(object):
         :type end: int index
         :rtype: int
         """
-
-        
-        print(begin)
-        print(end)
-        print((end-begin)/2+begin)
-        print(nums[(end-begin)/2+begin])
-        print()
-
         
         if nums is None or end-begin == -1:
             return -1;
