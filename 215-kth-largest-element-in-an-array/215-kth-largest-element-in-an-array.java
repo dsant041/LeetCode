@@ -9,12 +9,14 @@ class Solution {
         
         
         // sorting then returning length-k
-        /*
+        
         Arrays.sort(nums);
         
         return nums[nums.length-k];
-        */
         
+        
+        //maxheap then remove k maxes
+        /*
         PriorityQueue<Integer> maxheap = new PriorityQueue<Integer>(Collections.reverseOrder());
         
         for (int i=0; i<nums.length; i++){
@@ -29,6 +31,7 @@ class Solution {
         }
         
         return maxheap.poll();
+        */
         
     }
 }
