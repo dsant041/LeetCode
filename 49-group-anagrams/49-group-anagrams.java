@@ -16,7 +16,7 @@ class Solution {
             char [] arr = strs[i].toCharArray();
             Arrays.sort(arr);
             strsSorted[i] = new String(arr);
-            System.out.println(strsSorted[i]);
+            //System.out.println(strsSorted[i]);
         }
         
         for (int i=0; i <strs.length; i++){
