@@ -14,14 +14,24 @@ class Solution {
         
         for (int i=0; i<s.length(); i++){
             
+            try{
             alphabet[s.charAt(i) - 'a']++;
+            }
+            catch (ArrayIndexOutOfBoundsException e){
+                return false;
+            }
             
         }
         
         
         for (int i=0; i<t.length(); i++){
             
+            try{
             alphabet[t.charAt(i) - 'a']--;
+                }
+            catch (ArrayIndexOutOfBoundsException e){
+                return false;
+            }
             
         }
         
