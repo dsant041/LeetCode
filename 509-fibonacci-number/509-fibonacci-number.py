@@ -5,12 +5,17 @@ class Solution(object):
         :rtype: int
         """
         
-        f = []
-        f.append(0)
-        f.append(1)
+        f = 0
+        f1 = 0
+        f2 = 1
         
         for i in range(2,n+1):
             
-            f.append(f[i-1] + f[i-2])
+            f = f1 + f2
+            f1 = f2
+            f2 = f
             
-        return f[n]
+        if n <=1:
+            return n
+        else:
+            return f
