@@ -6,12 +6,12 @@ class Solution(object):
         """
         
         # create dict
-        nums_dict = dict()
+        nums_dict = set()
         
         # add nums to dict
         for n in nums:
             
-            nums_dict[n] = 0
+            nums_dict.add(n)
             
         # keep track of max length found
         max = 0
@@ -27,14 +27,14 @@ class Solution(object):
 
                 while curr_key in nums_dict:
                     length+= 1
-                    nums_dict.pop(curr_key) 
+                    nums_dict.remove(curr_key) 
                     curr_key+=1
 
                 curr_key = key - 1
 
                 while curr_key in nums_dict:
                     length+=  1
-                    nums_dict.pop(curr_key)
+                    nums_dict.remove(curr_key)
                     curr_key -=1
 
                 if length > max:
