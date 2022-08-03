@@ -9,14 +9,14 @@ class Solution {
         
         boolean happy = false;
         int num = n;
-        System.out.println(num);
+        //System.out.println(num);
         
         while (!happy){
             
             int currSum = 0;
             while (num > 0){
                 
-                System.out.println(num % 10);
+               // System.out.println(num % 10);
                 
                 currSum+= Math.pow(num % 10,2);
                 
@@ -24,7 +24,7 @@ class Solution {
                 
                 
             }
-            System.out.println(currSum + "\n");
+           // System.out.println(currSum + "\n");
             
             if (set.contains(currSum))
                 return false;
